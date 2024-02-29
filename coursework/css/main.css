@@ -1,0 +1,162 @@
+
+body {
+    background-color: #53644fce;
+    align-items: center;
+}
+
+header{
+    background-color:#15480B;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 200px;
+    margin: 15px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, p, a{
+    color: #e0d3b9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+h1 {
+    font-size: 36pt;
+}
+
+h3{
+    font-size: 26pt;
+    
+}
+
+p{
+    font-size: 11pt;
+}
+
+main{
+    background-color:#15480B;
+    border-radius: 10px;
+}
+
+aside{
+    background-color: #15480B;
+    border-radius: 10px;
+}
+
+footer{
+    border-radius: 10px;
+    background-color: #463213;
+}
+
+footer p {
+    color: #e0d3b9;
+}
+
+
+ul{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 0;
+}
+
+nav li{
+    border: 2px solid #463213;
+    background-color: #BE5D27;
+    list-style: none;
+    width: 20%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav li a{
+    color: #e0d3b9;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+nav li a:hover{
+    color: #463213;
+}
+
+.active{
+    background-color: #463213;
+    
+}
+
+.active a{
+    color: #e0d3b9;
+}
+
+.active a:hover{
+    color: #BE5D27;
+}
+
+table{
+    color: #e0d3b9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+}
+
+table td, table th{
+    border: 1px solid #e0d3b9;
+}
+
+Table tr:nth-child(even){
+    background-color: #e0d3b9;
+    color: #15480B;
+}
+
+Table tr:hover{
+    background-color: green;
+}
+
+Table th{
+    background-color: #BE5D27;
+    color: #e0d3b9;
+}
+
+
+fieldset {
+    color: #e0d3b9;
+    border-style: none;
+}
+
+legend {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+#contact-columns {
+    display: flex;
+}
+
+#column-right, #column-left {
+    width: 50%;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-input{
+    padding: 5px;
+}
+
+.contact-input input {
+    background-color: #e0d3b9;
+    border-style: none;
+}
+
+
+

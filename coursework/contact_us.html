@@ -6,13 +6,15 @@
     <body>
         
         <header>
-            <h1>Grandeur Guild of Crafts</h1>
+            <img src="images/logo.png" alt="The logo of the society. A badge with a ball of yarn on it" id="logo">
+            <h1 id="title">Grandeur Guild of Crafts</h1>
+            <link rel='stylesheet' href='css/main.css'>
         </header>
 
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
+                <li class="active"><a href="contact_us.html">Contact Us</a></li>
                 <li><a href="event_calendar.html">Our Events</a></li>
                 <li><a href="img_gallery.html">Photo Gallery</a></li>
                 <li><a href="current_members.html">Our Members</a></li>
@@ -20,33 +22,49 @@
         </nav>
 
         <main>
-            <div>
-                <form>
-                    <fieldset>
-                        <legend>Contact Us using the below form.</legend>
+            <div id="contact-columns">
+                <div id="column-left">
+                    <form>
+                        <fieldset>
+                            <legend>Contact us using the below form.</legend>
 
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" value=""/> <br/>
+                            <div class="contact-input">
+                                <label for="name">Name:</label> <br/>
+                                <input type="text" name="name" value=""/> <br/>
+                            </div>
 
-                        <label for="email">Email Address:</label>
-                        <input type="text" name="email" value=""/> <br/>
+                            <div class="contact-input">
+                                <label for="email">Email Address:</label> <br/>
+                                <input type="text" name="email" value=""/> <br/>
+                            </div>
+                            
+                            <div class="contact-input">
+                                <label for="membership">Membership Status (YES/NO):</label> <br/>
+                                <input type="checkbox" name="membership" value=""/> <br/>
+                            </div>
+                            
 
-                        <label for="membership">Membership Status (YES/NO)</label>
-                        <input type="checkbox" name="membership" value=""/> <br/>
+                            <div class="contact-input">
+                                <label for="contact_reason">Reason for contacting us:</label> <br/>
+                                <input type="text" name="contact_reason" value=""/> <br/>
+                            </div>
+                            
+                        </fieldset>
+                    </form>
+                </div>
+            
 
-                        <label for="contact_reason">Reason for contacting us:</label>
-                        <input type="text" name="contact_reason" value=""/> <br/>
-
-
-                         
-                    </fieldset>
-                </form>
+                <div id="column-right">
+                    <h3>Our Twitter</h3>
+                </div>
             </div>
         </main>
 
         <aside></aside>
 
-        <footer></footer>
+        <footer>
+            <p>COPYRIGHT: CALLA AITKEN</p>
+        </footer>
     
     </body>
 </html>
