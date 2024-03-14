@@ -1,7 +1,8 @@
-
+/*CSS for all pages*/
 body {
     background-color: #53644fce;
     align-items: center;
+    
 }
 
 header{
@@ -9,8 +10,16 @@ header{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
+    margin: 5px;
     display: flex;
     align-items: center;
+}
+
+.logo-and-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
 }
 
 #logo{
@@ -18,13 +27,22 @@ header{
     margin: 15px;
 }
 
+.login-form{
+    width: 50%;
+    margin: 0;
+}
 
+.login-fieldset{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
 
 h1, h2, h3, h4, h5, h6, p, a{
     color: #e0d3b9;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5px;
 }
-
 
 h1 {
     font-size: 36pt;
@@ -67,8 +85,8 @@ ul{
 }
 
 nav li{
-    border: 2px solid #463213;
-    background-color: #BE5D27;
+    border: 5px solid #8f4218;
+    background-color: #e0d3b9;
     list-style: none;
     width: 20%;
     text-align: center;
@@ -76,19 +94,18 @@ nav li{
 }
 
 nav li a{
-    color: #e0d3b9;
+    color: #463213;
     text-align: center;
     text-decoration: none;
-    
+    font-weight: 600;
 }
 
 nav li a:hover{
-    color: #463213;
+    color: #8f4218;
 }
 
 .active{
-    background-color: #463213;
-    
+    background-color: #8f4218;
 }
 
 .active a{
@@ -96,9 +113,31 @@ nav li a:hover{
 }
 
 .active a:hover{
-    color: #BE5D27;
+    color: #463213;
 }
 
+/*CSS for home page*/
+.carousel{
+    width: 700px;
+    margin: auto;
+}
+
+.carousel-caption p, h5{
+    color: #e0d3b9;
+    background-color: #463213;
+    opacity: 0.85;
+    margin: 0;
+}
+
+.carousel-caption p{
+    border-radius: 0px 0px 15px 15px;
+}
+
+.carousel-caption h5{
+    border-radius: 15px 15px 0px 0px;
+}
+
+/*CSS for events page*/
 table{
     color: #e0d3b9;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -115,20 +154,25 @@ Table tr:nth-child(even){
 }
 
 Table tr:hover{
-    background-color: green;
-}
-
-Table th{
-    background-color: #BE5D27;
+    background-color: #463213;
     color: #e0d3b9;
 }
 
+Table th{
+    background-color: #8f4218;
+    color: #e0d3b9;
+}
 
-fieldset {
+.contact-fieldset {
     color: #e0d3b9;
     border-style: none;
 }
 
+.contact-page-header {
+    font-size: 30px;
+}
+
+/*CSS for contact page*/
 legend {
     padding-top: 10px;
     padding-bottom: 5px;
@@ -144,13 +188,15 @@ legend {
     text-align: center;
 }
 
-form {
+.contact-form {
     display: flex;
     justify-content: center;
 }
 
 .contact-input{
     padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-input input {
@@ -158,5 +204,51 @@ form {
     border-style: none;
 }
 
+/*CSS for members page*/
+.col{
+    width: 30%;
+    padding: 5px;
+}
 
+.col img{
+    width: 100%;
+}
 
+.container{
+    padding: 5px;
+} 
+
+.members-container{
+    width: 100%;
+    margin: 0;
+}
+
+.member-img{
+    width: 250px;
+}
+
+.col-sm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.col-sm h5{
+    background-color: #e0d3b9;
+    color: #15480B;
+    padding: 5px;  
+    border-radius: 5px;
+}
+
+.member-title{
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.member-name{
+    margin-top: 5px;
+    font-size: 20px;
+    font-style: italic;
+}

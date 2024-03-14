@@ -1,37 +1,69 @@
-<html>
+<!DOCTYPE html>
+<html lang ="en">
     <head>
         <title>Grandeur Guild of Crafts</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel='stylesheet' href='css/main.css'>
+        <script src="scripts/main.js"></script>
     </head>
 
     <body>
-        
         <header>
-            <img src="images/logo.png" alt="The logo of the society. A badge with a ball of yarn on it" id="logo">
-            <h1 id="title">Grandeur Guild of Crafts</h1>
-            <link rel='stylesheet' href='css/main.css'>
+            <!--Society logo and name-->
+            <div class="logo-and-name">
+                <img src="images/logo.png" alt="The logo of the society. A badge with a ball of yarn on it" id="logo">
+                <h1 id="title">Grandeur Guild of Crafts</h1>
+            </div>
+
+            <!--Form for logging in-->
+            <div class="login-form">
+                <form>
+                    <fieldset class="login-fieldset">
+                        <div class="login-input">
+                            <input type="text" name="email" placeholder="Email:">
+                        </div>
+                        <div class="login-input">
+                            <input type="text" name="Password" placeholder="Password:">
+                        </div>
+                        <button type="button" onclick='login("login_button")' id="login_button">
+                            Login
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
         </header>
 
+    <!--List of links for navigation-->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li> 
                 <li><a href="event_calendar.html">Our Events</a></li>
-                <li class="active"><a href="img_gallery.html">Photo Gallery</a></li>
+                <li class="active"><a href="img_gallery.html">Photo Gallery</a></li><!--Current Page-->
                 <li><a href="current_members.html">Our Members</a></li>
             </ul>
         </nav>
 
         <main>
-            <img src="images/crochet_bears.jpg" alt="An image of several crocheted bears in a variety of colours">
-            <img src="images/embroidery.jpg" alt="An image of a cross stitch project depicting a colourful shopfront">
-            <img src="images/knitting.jpg" alt="An image of a knitted blanket with colourful stripes">
-            <img src="images/crochet_bunny.jpg" alt="An image of a grey crocheted bunny sitting on grass and surrounded by daisies">
-            <img src="images/crochet_hearts.jpg" alt="An image of several pink white and grey crocheted hearts surrounded by daisies">
-            <img src="images/paper_craft.jpg" alt="An image of people making colourful flowers and leaves out of paper">
-            <img src="images/person_crochet.jpg" alt="An image of a person crocheting">
-            <img src="images/threads.jpg" alt="An image of various embroidery threads in different colours">
-            <img src="images/toys.jpg" alt="An image of a basket filled with stuffed bears, sitting next to a pile of folded fabrics">
-            <img src="images/sewing.jpg" alt="An image of various different embroidery projects and embroidery threads">
+            <!--Contains all 9 gallery images-->
+            <div class="container">
+                <div class="row"> <!--Separates the rows of images-->
+                    <div class="col"><img class="gallery-photo" src="images/crochet_bears.jpg" alt="An image of several crocheted bears in a variety of colours"></div>
+                    <div class="col"><img class="gallery-photo" src="images/embroidery.jpg" alt="An image of a cross stitch project depicting a colourful shopfront"></div>
+                    <div class="col"><img class="gallery-photo" src="images/paper_craft.jpg" alt="An image of people making colourful flowers and leaves out of paper"></div>
+                </div> 
+                <div class="row"> <!--Separates the rows of images-->
+                    <div class="col"><img class="gallery-photo" src="images/knitting.jpg" alt="An image of a knitted blanket with colourful stripes"></div>
+                    <div class="col"><img class="gallery-photo" src="images/crochet_bunny.jpg" alt="An image of a grey crocheted bunny sitting on grass and surrounded by daisies"></div>
+                    <div class="col"><img class="gallery-photo" src="images/crochet_hearts.jpg" alt="An image of several pink white and grey crocheted hearts surrounded by daisies"></div>
+                </div>
+                <div class="row"> <!--Separates the rows of images-->
+                    <div class="col"><img class="gallery-photo" src="images/person_crochet.jpg" alt="An image of a person crocheting"></div>
+                    <div class="col"><img class="gallery-photo" src="images/toys.jpg" alt="An image of a basket filled with stuffed bears, sitting next to a pile of folded fabrics"></div>
+                    <div class="col"><img class="gallery-photo" src="images/sewing.jpg" alt="An image of various different embroidery projects and embroidery threads"></div>
+                </div>
+            </div>               
         </main>
 
         <aside></aside>
