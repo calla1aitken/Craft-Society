@@ -6,12 +6,14 @@ body {
 }
 
 header{
+    width: 100%;
     background-color:#15480B;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
     margin: 5px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -19,7 +21,6 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 50%;
 }
 
 #logo{
@@ -28,7 +29,6 @@ header{
 }
 
 .login-form{
-    width: 50%;
     margin: 0;
 }
 
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6, p, a{
 }
 
 h1 {
-    font-size: 36pt;
+    font-size: 50pt;
 }
 
 h3{
@@ -251,4 +251,59 @@ legend {
     margin-top: 5px;
     font-size: 20px;
     font-style: italic;
+}
+
+/*Patterns*/
+
+.pattern-type-header{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.patterns-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.pattern{
+    width: 49%;
+    display: flex;
+    margin-bottom: 15px;
+    background-color: #463213;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pattern p{
+    font-size: 20px;
+}
+
+.pattern img{
+    width: 400px;
+    border:5px solid #8f4218;
+    border-radius: 15px;
+}
+
+.pattern a{
+    margin-top: 30px;
+}
+
+.pattern-link{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #8f4218;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.pattern-link:hover{
+    background-color: #e0d3b9;
+    color: #463213;
+}
+
+.pattern-link-button{
+    margin-top: 30px;
 }
