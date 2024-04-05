@@ -52,6 +52,7 @@
 
         <main>
             <h2 class="resources-title">Youtube Videos</h2>
+            <!--Container for all youtube video iframes-->
             <div class="youtube-container">
                 <iframe class="youtube" src="https://www.youtube-nocookie.com/embed/hM5M2Fu0RtY?si=H8ZHciA3npH-O4m0" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <iframe class="youtube" src="https://www.youtube.com/embed/aAxGTnVNJiE?si=1uCUnmozgDbb2yJU" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -61,14 +62,31 @@
             </div>
 
             <h2 class="resources-title">Yarn Guides</h2>
+            <!--Container for all yarn guides-->
             <div class="helpful-images-container">
-                <img class="helpful-images" src="images/crochet-guide.jpg" alt="A guide showing yarn weights and their corresponding crochet hook sizes">
-                <img class="helpful-images" src="images/Yarn-Guide.jpg" alt="A guide showing yean weights and various types of information in regards to their use in crochet and knitting">
+                <!--Container for image and print button-->
+                <div class="image-and-button">
+                    <img id="image-one" class="helpful-images" src="images/crochet-guide.jpg" alt="A guide showing yarn weights and their corresponding crochet hook sizes">
+                    <!--When clicked, runs print function for the corresponding image-->
+                    <button onclick='print("image-one")' class="print-button">
+                        Print Guide
+                    </button>
+                </div>
+                <!--Container for image and print button-->
+                <div class="image-and-button">
+                    <img id="image-two" class="helpful-images" src="images/Yarn-Guide.jpg" alt="A guide showing yean weights and various types of information in regards to their use in crochet and knitting">
+                    <!--When clicked, runs print function for the corresponding image-->
+                    <button type="button" onclick='print("image-two")' class="print-button"> 
+                        Print Guide
+                    </button>
+                </div>
             </div>
 
             <h2 class="resources-title">Useful Websites</h2>
+            <!--Container for all website links and iframes-->
             <div class="website-container">
                 <iframe class="helpful-website-frame" src="https://coolors.co/e5beed-9593d9-7c90db-736b92-7d5c65" title="Colour Picker Website" ></iframe>
+                <!--List with images that send the user to the website when clicked-->
                 <ul class="helpful-website-list">
                     <li>
                         <a href="https://www.yarnspirations.com/en-row">

@@ -500,6 +500,15 @@ Table tr:hover{
     height: 400px;
 }
 
+.image-and-button{
+    text-align: center;
+}
+
+.print-button{
+    width: 200px;
+    margin-top: 10px;
+}
+
 .website-container{
     display: flex;
     flex-direction: row;

@@ -1,16 +1,18 @@
+//shows text confirming form submission
 function send_form(submittedId, submittedText){
     var submitted = document.getElementById(submittedId);
     submitted.innerHTML = submittedText;
 }
 
+//Login form validation
 var counter = 0;
 function login(button){
     var email = document.forms["login-form"]["login-email"].value;
     var password = document.forms["login-form"]["password"].value;
-    document.forms["login-form"]["login-email"].value = "";
+    document.forms["login-form"]["login-email"].value = ""; //resets inputs when button is clicked
     document.forms["login-form"]["password"].value = "";
 
-    if(counter % 2 == 0 && email == "" || counter % 2 == 0 && password == ""){ //If counter is even, the user is logged in
+    if(counter % 2 == 0 && email == "" || counter % 2 == 0 && password == ""){ //If counter is even and inputs have text, the user is logged in 
         alert('You must enter your details');
         
     } else if (counter % 2 == 0){
@@ -52,7 +54,7 @@ imgGallery();
 function submit_event() {
     var title = document.forms["events"]["event-title"].value;
     var date = document.forms["events"]["event-date"].value;
-    document.forms["events"]["event-title"].value = "";
+    document.forms["events"]["event-title"].value = ""; //resets values on button click
     document.forms["events"]["event-date"].value = "";
     document.forms["events"]["event-desc"].value = "";
     if (title == "") {
@@ -68,3 +70,15 @@ function submit_event() {
     }
 }
     
+function print(img){
+    //if the button corresponds to first image, the document.write content changes to get the image 1 src
+    if(img == "image-one"){
+        var printscreen = window.open(''); //opens new window, places image on it, prints it, then closes the window
+        printscreen.document.write('<img src="images/crochet-guide.jpg" onload="window.print();window.close()" />');
+    //if the button corresponds to second image, the document.write content changes to get the image 2 src
+    } else if (img == "image-two"){
+        var printscreen = window.open(''); //opens new window, places image on it, prints it, then closes the window
+        printscreen.document.write('<img src="images/Yarn-Guide.jpg" onload="window.print();window.close()" />');
+    }
+    
+  }
