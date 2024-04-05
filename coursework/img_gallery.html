@@ -6,7 +6,22 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel='stylesheet' href='css/main.css'>
         <script src="scripts/main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
     </head>
+
+<!--
+Threat Model
+Threat Source: External
+Threat Agent: Human
+Threat Intention: Intentional
+Threat Motivation: Embarrassment of the society
+Threat Impact: Defacement of society website, changing of society photos, discourage people
+from joining society.
+Threat Mitigation: Login validation, only the account of the society leader has permisiions
+to change images, Image changes require approval before they are made public
+-->
 
     <body>
         <header>
@@ -18,13 +33,13 @@
 
             <!--Form for logging in-->
             <div class="login-form">
-                <form>
+                <form name="login-form">
                     <fieldset class="login-fieldset">
                         <div class="login-input">
-                            <input type="text" name="email" placeholder="Email:">
+                            <input type="text" id="login-email" placeholder="Email:">
                         </div>
                         <div class="login-input">
-                            <input type="text" name="Password" placeholder="Password:">
+                            <input type="text" id="password" placeholder="Password:">
                         </div>
                         <button type="button" onclick='login("login_button")' id="login_button">
                             Login
@@ -43,35 +58,33 @@
                 <li class="active"><a href="img_gallery.html">Photo Gallery</a></li><!--Current Page-->
                 <li><a href="current_members.html">Our Members</a></li>
                 <li ><a href="patterns.html">Patterns</a></li> 
-                <li ><a href="supplies.html">Supplies</a></li> 
+                <li ><a href="resources.html">Useful Resources</a></li> 
             </ul>
         </nav>
 
         <main>
             <!--Contains all 9 gallery images-->
-            <div class="container">
-                <div class="row"> <!--Separates the rows of images-->
-                    <div class="col"><img class="gallery-photo" src="images/crochet_bears.jpg" alt="An image of several crocheted bears in a variety of colours"></div>
-                    <div class="col"><img class="gallery-photo" src="images/embroidery.jpg" alt="An image of a cross stitch project depicting a colourful shopfront"></div>
-                    <div class="col"><img class="gallery-photo" src="images/paper_craft.jpg" alt="An image of people making colourful flowers and leaves out of paper"></div>
+            <div class="gallery-container">
+                <div class="gallery-row"> <!--Separates the rows of images-->
+                    <div class="gallery-object"><img class="gallery-photo" src="images/crochet_bears.jpg" alt="An image of several crocheted bears in a variety of colours"></div>
+                    <div class="gallery-object"><img class="gallery-photo" src="images/embroidery.jpg" alt="An image of a cross stitch project depicting a colourful shopfront"></div>
+                    <div class="gallery-object"><img class="gallery-photo" src="images/paper_craft.jpg" alt="An image of people making colourful flowers and leaves out of paper"></div>
                 </div> 
-                <div class="row"> <!--Separates the rows of images-->
-                    <div class="col"><img class="gallery-photo" src="images/knitting.jpg" alt="An image of a knitted blanket with colourful stripes"></div>
-                    <div class="col"><img class="gallery-photo" src="images/crochet_bunny.jpg" alt="An image of a grey crocheted bunny sitting on grass and surrounded by daisies"></div>
-                    <div class="col"><img class="gallery-photo" src="images/crochet_hearts.jpg" alt="An image of several pink white and grey crocheted hearts surrounded by daisies"></div>
+                <div class="gallery-row"> <!--Separates the rows of images-->
+                    <div class="gallery-object"><img class="gallery-photo" src="images/knitting.jpg" alt="An image of a knitted blanket with colourful stripes"></div>
+                    <div class="gallery-object"><img class="gallery-photo" src="images/crochet_bunny.jpg" alt="An image of a grey crocheted bunny sitting on grass and surrounded by daisies"></div>
+                    <div class="gallery-object"><img class="gallery-photo" src="images/crochet_hearts.jpg" alt="An image of several pink white and grey crocheted hearts surrounded by daisies"></div>
                 </div>
-                <div class="row"> <!--Separates the rows of images-->
-                    <div class="col"><img class="gallery-photo" src="images/person_crochet.jpg" alt="An image of a person crocheting"></div>
-                    <div class="col"><img class="gallery-photo" src="images/toys.jpg" alt="An image of a basket filled with stuffed bears, sitting next to a pile of folded fabrics"></div>
-                    <div class="col"><img class="gallery-photo" src="images/sewing.jpg" alt="An image of various different embroidery projects and embroidery threads"></div>
+                <div class="gallery-row"> <!--Separates the rows of images-->
+                    <div class="gallery-object"><img class="gallery-photo" src="images/person_crochet.jpg" alt="An image of a person crocheting"></div>
+                    <div class="gallery-object"><img class="gallery-photo" src="images/toys.jpg" alt="An image of a basket filled with stuffed bears, sitting next to a pile of folded fabrics"></div>
+                    <div class="gallery-object"><img class="gallery-photo" src="images/sewing.jpg" alt="An image of various different embroidery projects and embroidery threads"></div>
                 </div>
             </div>               
         </main>
 
-        <aside></aside>
-
         <footer>
-            <p>COPYRIGHT: CALLA AITKEN</p>
+            <p>&copy; GRANDEUR GUILD OF CRAFTS - CALLA AITKEN 2024</p>
         </footer>
     
     </body>

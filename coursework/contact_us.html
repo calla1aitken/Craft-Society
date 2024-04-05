@@ -6,6 +6,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel='stylesheet' href='css/main.css'>
         <script src="scripts/main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -18,13 +21,13 @@
 
             <!--Form for logging in-->
             <div class="login-form">
-                <form>
+                <form name="login-form">
                     <fieldset class="login-fieldset">
                         <div class="login-input">
-                            <input type="text" name="email" placeholder="Email:">
+                            <input type="text" id="login-email" placeholder="Email:">
                         </div>
                         <div class="login-input">
-                            <input type="text" name="Password" placeholder="Password:">
+                            <input type="text" id="password" placeholder="Password:">
                         </div>
                         <button type="button" onclick='login("login_button")' id="login_button">
                             Login
@@ -43,7 +46,7 @@
                 <li><a href="img_gallery.html">Photo Gallery</a></li>
                 <li><a href="current_members.html">Our Members</a></li>
                 <li ><a href="patterns.html">Patterns</a></li> 
-                <li ><a href="supplies.html">Supplies</a></li> 
+                <li ><a href="resources.html">Useful Resources</a></li> 
             </ul>
         </nav>
 
@@ -70,10 +73,14 @@
                                 <input type="checkbox" id="membership">
                             </div>
                             
-
                             <div class="contact-input">
                                 <label for="contact_reason">Reason for contacting us:</label>
                                 <input type="text" id="contact_reason">
+                            </div>
+
+                            <div class="contact-input">
+                                <label for="contact-file">Attach a file:</label>
+                                <input type="file" id="contact-file">
                             </div>
                             
                             <button type="button" onclick='send_form("form_outcome", "Form has been sent successfully!")'>
@@ -89,18 +96,20 @@
                     </div>
 
                 </div>
+
+                
             
                 <!--Twitter Feed-->
                 <div id="column-right">
                     <h2 class = "contact-page-header">Our Twitter</h2>
+                    <a class="twitter-timeline" data-width="500" data-height="275" href="https://twitter.com/5m_crafts?ref_src=twsrc%5Etfw">Tweets by 5m_crafts</a> 
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
                 </div>
             </div>
         </main>
 
-        <aside></aside>
-
         <footer>
-            <p>COPYRIGHT: CALLA AITKEN</p>
+            <p>&copy; GRANDEUR GUILD OF CRAFTS - CALLA AITKEN 2024</p>
         </footer>
     
     </body>

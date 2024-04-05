@@ -1,87 +1,129 @@
 /*CSS for all pages*/
+
 body {
     background-color: #53644fce;
     align-items: center;
-    
+    width: 100%;
+    margin: 0;
 }
 
 header{
-    width: 100%;
     background-color:#15480B;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     padding: 10px;
-    margin: 5px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+main{
+    background-color:#15480B;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 40px;
+}
+
+.home-page{
+    border-radius: 20px;
+}
+
+footer{
+    border-radius: 10px;
+    background-color: #463213;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    color: #e0d3b9;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, label, button, legend, th {
+    color: #e0d3b9;
+    font-family: "Mate SC", serif;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+h2, legend{
+    font-size: 28pt;
+    text-align: center;
+    padding-top: 10px;
+}
+
+p, input, textarea, ::placeholder, td{
+    font-family: "Krub", sans-serif;
+    font-size: 11pt;
 }
 
 .logo-and-name{
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 75%;
 }
 
 #logo{
-    width: 200px;
+    width: 150px;
     margin: 15px;
 }
 
 .login-form{
     margin: 0;
+    
 }
 
 .login-fieldset{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: flex-end;
+    width: 400px;
 }
 
-h1, h2, h3, h4, h5, h6, p, a{
+.login-input input{
+    width: 150px;
+    margin-right: 5px;
+}
+
+button{
+    background-color: #8f4218;
+    border: none;
     color: #e0d3b9;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-h1 {
-    font-size: 50pt;
+input, textarea{
+    color: #15480B;
+    background-color: #e0d3b9;
+    border-style: none;
 }
 
-h3{
-    font-size: 26pt;
-    
-}
-
-p{
-    font-size: 11pt;
-}
-
-main{
-    background-color:#15480B;
-    border-radius: 10px;
-}
-
-aside{
-    background-color: #15480B;
-    border-radius: 10px;
-}
-
-footer{
-    border-radius: 10px;
+button:hover{
     background-color: #463213;
-}
-
-footer p {
     color: #e0d3b9;
 }
 
+button:active{
+    background-color: #463213;
+    color: #8f4218;
+}
 
 ul{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     padding: 0;
+    margin-bottom: 10px;
 }
 
 nav li{
@@ -116,10 +158,25 @@ nav li a:hover{
     color: #463213;
 }
 
+
 /*CSS for home page*/
+
+.home-text{
+    text-align: center;
+    width: 700px;
+    margin: auto;
+}
 .carousel{
     width: 700px;
     margin: auto;
+}
+
+.carousel button{
+    background: none;
+}
+
+.carousel-item{
+    border-radius: 20px;
 }
 
 .carousel-caption p, h5{
@@ -137,6 +194,38 @@ nav li a:hover{
     border-radius: 15px 15px 0px 0px;
 }
 
+.news-section{
+    background-color: #15480B;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.news-headline{
+    font-size: 40px;
+}
+
+.news-article{
+    width: 700px;
+    display: flex;
+    margin-bottom: 15px;
+    background-color: #463213;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.news-image{
+    margin-right: 10px;
+    border:5px solid #8f4218;
+    border-radius: 15px;
+}
+
 /*CSS for events page*/
 table{
     color: #e0d3b9;
@@ -145,7 +234,25 @@ table{
 }
 
 table td, table th{
-    border: 1px solid #e0d3b9;
+    border: 1px solid #e0d3b9;    
+}
+
+table th{
+    text-align: center;
+    background-color: #8f4218;
+    color: #e0d3b9;
+    font-size: 17px;
+}
+
+table td{
+    width: 12%;
+    padding: 5px;
+    font-size: 10pt;
+}
+
+Table tr:nth-child(even){
+    background-color: #e0d3b9;
+    color: #15480B;
 }
 
 Table tr:nth-child(even){
@@ -156,27 +263,41 @@ Table tr:nth-child(even){
 Table tr:hover{
     background-color: #463213;
     color: #e0d3b9;
+    cursor: pointer;
 }
 
-Table th{
-    background-color: #8f4218;
+.event-fieldset {
     color: #e0d3b9;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
 }
 
-.contact-fieldset {
-    color: #e0d3b9;
-    border-style: none;
+.event-input{
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
 }
 
-.contact-page-header {
-    font-size: 30px;
+.event-input input, textarea{
+    width: 200px;
+
+    margin: 5px;
+    max-height: 100px;
+    min-height: 24px;
+}
+
+.event-fieldset button{
+    width: 200px;
+    align-self: center;
+    margin-top: 5px;
 }
 
 /*CSS for contact page*/
-legend {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    font-size: 18px;
+.contact-fieldset {
+    color: #e0d3b9;
+    border-style: none;
 }
 
 #contact-columns {
@@ -185,7 +306,7 @@ legend {
 
 #column-right, #column-left {
     width: 50%;
-    text-align: center;
+    padding-bottom: 10px;
 }
 
 .contact-form {
@@ -193,58 +314,94 @@ legend {
     justify-content: center;
 }
 
-.contact-input{
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
+.contact-input label{
+    padding-right: 20px;
 }
 
-.contact-input input {
+.contact-input {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-form button {
+    width: 100%;
+    margin-top: 7px;
+    align-self: flex-start;
+}
+
+#form_outcome{
+    margin-top: 10px;
+    text-align: center;
+}
+
+[type = text] {
     background-color: #e0d3b9;
     border-style: none;
 }
 
-/*CSS for members page*/
-.col{
+#column-right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+} 
+
+.twitter-timeline{
+    padding-top: 5px;
+}
+
+/*CSS for gallery page*/
+
+.gallery-container{
+    padding: 5px;
+    margin: auto;
+} 
+
+.gallery-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-object{
     width: 30%;
     padding: 5px;
 }
 
-.col img{
+.gallery-object img{
     width: 100%;
 }
 
-.container{
-    padding: 5px;
-} 
+
+/*CSS for members page*/
 
 .members-container{
     width: 100%;
     margin: 0;
 }
 
+.members-row{
+    display: flex;
+    justify-content: center;
+}
+
+.member{
+    text-align: center;
+    margin: 10px 20px;
+    background-color: #463213;
+    width: 340px;
+    border-radius: 20px;
+}
+
 .member-img{
     width: 250px;
-}
-
-.col-sm{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-}
-
-.col-sm h5{
-    background-color: #e0d3b9;
-    color: #15480B;
-    padding: 5px;  
-    border-radius: 5px;
+    margin: 5px;
 }
 
 .member-title{
     margin-bottom: 5px;
     font-size: 25px;
-    font-weight: 600;
 }
 
 .member-name{
@@ -258,33 +415,32 @@ legend {
 .pattern-type-header{
     text-align: center;
     font-size: 40px;
-    padding: 20px;
+    padding-top: 15px;
+    margin: 0;
 }
 
 .patterns-section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px;
+    width: 95%;
+    margin: auto;
 }
 
 .pattern{
     width: 49%;
     display: flex;
-    margin-bottom: 15px;
     background-color: #463213;
     padding: 20px;
-    border-radius: 10px;
+    margin-top: 15px;
+    border-radius: 20px;
 }
 
-.pattern p{
-    font-size: 20px;
-}
-
-.pattern img{
-    width: 400px;
+.pattern-image{
+    width: 300px;
     border:5px solid #8f4218;
     border-radius: 15px;
+    margin-right: 10px;
 }
 
 .pattern a{
@@ -304,6 +460,71 @@ legend {
     color: #463213;
 }
 
+.pattern-link:active{
+    background-color: #e0d3b9;
+    color: #8f4218;
+}
+
 .pattern-link-button{
     margin-top: 30px;
 }
+
+/*Useful Resources*/
+
+.resources-title{
+    padding: 10px;
+}
+
+.youtube-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.youtube{
+    width:400px;
+    height: 225px;
+    border: 5px solid #463213;
+    margin: 5px;
+}
+
+.helpful-images-container{
+    display: flex;
+    width: 850px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.helpful-images{
+    height: 400px;
+}
+
+.website-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+}
+
+.helpful-website-frame{
+    width: 40%;
+    height: 575px;
+}
+
+.helpful-website-list{
+    list-style: none;
+    width: 40%;
+    height: 575px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+
+

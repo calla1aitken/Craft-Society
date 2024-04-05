@@ -6,6 +6,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel='stylesheet' href='css/main.css'>
         <script src="scripts/main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -18,13 +21,13 @@
 
             <!--Form for logging in-->
             <div class="login-form">
-                <form>
+                <form name="login-form">
                     <fieldset class="login-fieldset">
                         <div class="login-input">
-                            <input type="text" name="email" placeholder="Email:">
+                            <input type="text" id="login-email" placeholder="Email:">
                         </div>
                         <div class="login-input">
-                            <input type="text" name="Password" placeholder="Password:">
+                            <input type="text" id="password" placeholder="Password:">
                         </div>
                         <button type="button" onclick='login("login_button")' id="login_button">
                             Login
@@ -43,7 +46,7 @@
                 <li><a href="img_gallery.html">Photo Gallery</a></li>
                 <li><a href="current_members.html">Our Members</a></li>
                 <li ><a href="patterns.html">Patterns</a></li> 
-                <li ><a href="supplies.html">Supplies</a></li> 
+                <li ><a href="resources.html">Useful Resources</a></li> 
             </ul>
         </nav>
 
@@ -157,7 +160,7 @@
                         <td></td>
                         <td>Weekly Meeting @ 1pm, Riverside Building</td>
                         <td>Google Form for this months cafe choice opens</td>
-                        <td></td>
+                        <td>RGU Craft Fair</td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -196,12 +199,35 @@
                     </tr>
                 </table>
             </div>
+            <h2>Want to recommend an event? Tell us below!</h2>
+            <form class="event-form" name="events">
+                <fieldset class="event-fieldset">
+
+                    <div class="event-input">
+                        <label for="event-title">Event Name:</label>
+                        <input type="text" id="event-title">
+                    </div>
+
+                    <div class="event-input">
+                        <label for="event-date">Event Date:</label>
+                        <input type="date" id="event-date">
+                    </div>
+
+                    <div class="event-input">
+                        <label for="event-desc">Event description:</label>
+                        <textarea id="event-desc"></textarea>
+                    </div>
+
+                    <button type="button" onclick= 'submit_event()'>
+                        Submit
+                    </button>
+
+                </fieldset>
+            </form>
         </main>
 
-        <aside></aside>
-
         <footer>
-            <p>COPYRIGHT: CALLA AITKEN</p>
+            <p>&copy; GRANDEUR GUILD OF CRAFTS - CALLA AITKEN 2024</p>
         </footer>
     
     </body>
