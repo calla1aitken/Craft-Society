@@ -68,7 +68,7 @@ p, input, textarea, ::placeholder, td{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 75%;
+    width: 950px;
 }
 
 #logo{
@@ -123,6 +123,8 @@ ul{
     flex-wrap: nowrap;
     flex-direction: row;
     padding: 0;
+    width: 100%;
+    justify-content: center;
     margin-bottom: 10px;
 }
 
@@ -130,7 +132,7 @@ nav li{
     border: 5px solid #8f4218;
     background-color: #e0d3b9;
     list-style: none;
-    width: 20%;
+    width: 14%;
     text-align: center;
     padding: 10px 0;
 }
@@ -423,7 +425,7 @@ Table tr:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 95%;
+    width: 1200px;
     margin: auto;
 }
 
@@ -515,17 +517,17 @@ Table tr:hover{
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    width: 90%;
+    width: 1100px;
 }
 
 .helpful-website-frame{
-    width: 40%;
+    width: 500px;
     height: 575px;
 }
 
 .helpful-website-list{
     list-style: none;
-    width: 40%;
+    width: 500px;
     height: 575px;
     display: flex;
     flex-wrap: wrap;
